@@ -1,0 +1,25 @@
+﻿@model MovieModel
+
+@{
+}
+
+<form method="post" asp-action="MovieNightForm">
+
+    <label for="title1">Movie 1:</label>
+    Search for movie <input type="text" name="title1"/>
+
+    <label for="title2">Movie 2:</label>
+    Search for movie <input type="text" name="title2"/>
+
+    <label for="title3">Movie 3:</label>
+    Search for movie <input type="text" name="title3"/>
+
+    <input type="submit"/>
+</form>
+
+@{
+    if(Model != null)
+    {
+        <h4>@Model.Title</h4>
+    }
+}
